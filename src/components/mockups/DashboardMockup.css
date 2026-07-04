@@ -1,0 +1,142 @@
+.dashboard-mockup {
+  position: relative;
+  min-height: 100%;
+  padding: 24px 20px 90px;
+}
+
+.dashboard-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.dashboard-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-icon-btn {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-bg-surface);
+  color: var(--color-text-main);
+  box-shadow: var(--shadow-md);
+  cursor: default;
+}
+
+.dashboard-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  border-radius: 999px;
+  background: var(--color-expense);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.dashboard-balance {
+  display: block;
+  margin-top: 6px;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-text-main);
+}
+
+.dashboard-stat-strip {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-surface);
+}
+
+.dashboard-stat {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dashboard-stat-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--color-border);
+  margin: 0 16px;
+}
+
+.dashboard-stat-label {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.dashboard-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-main);
+}
+
+.dashboard-stat-value--positive {
+  color: var(--color-income);
+}
+
+.dashboard-nav {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-nav);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+}
+
+.dashboard-nav-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.dashboard-nav-btn--primary {
+  width: 48px;
+  height: 48px;
+  margin-top: -18px;
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  box-shadow: var(--shadow-md);
+}

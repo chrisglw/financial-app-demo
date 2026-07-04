@@ -1,0 +1,32 @@
+.phone-frame {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  aspect-ratio: 375 / 812;
+  background: var(--color-bg-surface);
+  border: 10px solid var(--color-text-main);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.phone-frame-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 22px;
+  background: var(--color-text-main);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  z-index: 2;
+}
+
+.phone-frame-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--color-bg-main);
+}

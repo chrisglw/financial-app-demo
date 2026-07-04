@@ -1,0 +1,55 @@
+:root {
+  /* Brand / semantic colors */
+  --color-primary: #10b981;
+  --color-primary-hover: #0d9488;
+  --color-primary-light: #e6f4ea;
+
+  --color-income: #10b981;
+  --color-income-light: #e6f4ea;
+
+  --color-expense: #ef4444;
+  --color-expense-hover: #dc2626;
+  --color-expense-light: #fef2f2;
+
+  --color-transfer: #3b82f6;
+  --color-transfer-light: #eff6ff;
+
+  /* Neutrals */
+  --color-bg-main: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-nav: #ffffff;
+
+  --color-border: #e2e8f0;
+  --color-border-focus: #10b981;
+
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-on-primary: #ffffff;
+
+  /* Geometry */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --height-input: 48px;
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme='dark'] {
+  --color-primary: #34d399;
+  --color-primary-light: rgba(52, 211, 153, 0.12);
+  --color-income: #34d399;
+  --color-income-light: rgba(52, 211, 153, 0.12);
+  --color-expense: #f87171;
+  --color-expense-light: rgba(248, 113, 113, 0.12);
+  --color-transfer: #60a5fa;
+  --color-transfer-light: rgba(96, 165, 250, 0.12);
+  --color-bg-main: #0f172a;
+  --color-bg-surface: #1e293b;
+  --color-bg-nav: rgba(30, 41, 59, 0.8);
+  --color-border: #334155;
+  --color-border-focus: #34d399;
+  --color-text-main: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}

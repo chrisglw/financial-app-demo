@@ -5,8 +5,9 @@ import WaitlistSection from './sections/WaitlistSection'
 import Footer from './sections/Footer'
 import PhoneFrame from './components/PhoneFrame'
 import DashboardMockup from './components/mockups/DashboardMockup'
-import TransactionRow from './components/TransactionRow'
-import { transactions } from './data/sampleData'
+import CategoryDonut from './components/charts/CategoryDonut'
+import BalanceAreaChart from './components/charts/BalanceAreaChart'
+import IncomeExpenseBars from './components/charts/IncomeExpenseBars'
 
 function App() {
   return (
@@ -27,12 +28,22 @@ function App() {
         </PhoneFrame>
       </section>
 
-      {/* temporary: remove once the dashboard mockup renders this list */}
+      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
       <section className="section">
-        <h2>Scratch: TransactionRow preview</h2>
-        {transactions.map((t) => (
-          <TransactionRow key={t.id} {...t} />
-        ))}
+        <h2>Scratch: CategoryDonut preview</h2>
+        <CategoryDonut />
+      </section>
+
+      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
+      <section className="section">
+        <h2>Scratch: BalanceAreaChart preview</h2>
+        <BalanceAreaChart />
+      </section>
+
+      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
+      <section className="section">
+        <h2>Scratch: IncomeExpenseBars preview</h2>
+        <IncomeExpenseBars />
       </section>
     </div>
   )

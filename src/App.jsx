@@ -5,15 +5,17 @@ import WaitlistSection from './sections/WaitlistSection'
 import Footer from './sections/Footer'
 import PhoneFrame from './components/PhoneFrame'
 import DashboardMockup from './components/mockups/DashboardMockup'
-import CategoryDonut from './components/charts/CategoryDonut'
-import BalanceAreaChart from './components/charts/BalanceAreaChart'
-import IncomeExpenseBars from './components/charts/IncomeExpenseBars'
+import StatsMockup from './components/mockups/StatsMockup'
 
 function App() {
   return (
     <div className="page">
       <Hero />
-      <FeatureSection title="Smart Stats" />
+      <FeatureSection
+        title="Smart Stats"
+        copy="Track spending by category, watch your balance trend, and compare income to expenses — all in one glance, no spreadsheets required."
+        mockup={<StatsMockup />}
+      />
       <FeatureSection title="Split Bills Without the Awkwardness" />
       <FeatureSection title="Effortless Entry" />
       <FeatureSection title="Know Your Accounts" />
@@ -26,24 +28,6 @@ function App() {
         <PhoneFrame>
           <DashboardMockup />
         </PhoneFrame>
-      </section>
-
-      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
-      <section className="section">
-        <h2>Scratch: CategoryDonut preview</h2>
-        <CategoryDonut />
-      </section>
-
-      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
-      <section className="section">
-        <h2>Scratch: BalanceAreaChart preview</h2>
-        <BalanceAreaChart />
-      </section>
-
-      {/* temporary: gets assembled into the Stats mockup in phase 08 */}
-      <section className="section">
-        <h2>Scratch: IncomeExpenseBars preview</h2>
-        <IncomeExpenseBars />
       </section>
     </div>
   )

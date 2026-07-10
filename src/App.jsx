@@ -6,6 +6,7 @@ import Footer from './sections/Footer'
 import PhoneFrame from './components/PhoneFrame'
 import DashboardMockup from './components/mockups/DashboardMockup'
 import StatsMockup from './components/mockups/StatsMockup'
+import AccountDetailMockup from './components/mockups/AccountDetailMockup'
 
 function App() {
   return (
@@ -27,6 +28,14 @@ function App() {
         <h2>Scratch: DashboardMockup preview</h2>
         <PhoneFrame>
           <DashboardMockup />
+        </PhoneFrame>
+      </section>
+
+      {/* temporary: account detail mockup gets wired into FeatureSection in phase 13 */}
+      <section className="section">
+        <h2>Scratch: AccountDetailMockup preview</h2>
+        <PhoneFrame>
+          <AccountDetailMockup />
         </PhoneFrame>
       </section>
     </div>

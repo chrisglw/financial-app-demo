@@ -135,6 +135,16 @@ export const peerDebt = {
   ],
 }
 
+export const splitAllocation = {
+  merchant: 'Dinner',
+  amount: 84.0,
+  friends: [
+    { id: 'f1', name: 'Jordan', initial: 'J', amount: 28.0 },
+    { id: 'f2', name: 'Sam', initial: 'S', amount: 28.0 },
+    { id: 'f3', name: 'Alex', initial: 'A', amount: 28.0 },
+  ],
+}
+
 export const accountDetail = {
   name: 'Rewards Visa',
   type: 'CREDIT CARD',

@@ -1,0 +1,122 @@
+.peer-debt-mockup {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.peer-debt-hero {
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.peer-debt-hero-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.peer-debt-hero-summary {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text-main);
+}
+
+.peer-debt-hero-summary--positive {
+  color: var(--color-income);
+}
+
+.peer-debt-hero-dot {
+  margin: 0 6px;
+  color: var(--color-text-muted);
+}
+
+.peer-debt-section-title {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.peer-debt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.peer-debt-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-left: 3px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.peer-debt-card--owe {
+  border-left-color: #6366f1;
+}
+
+.peer-debt-card--owed {
+  border-left-color: var(--color-income);
+}
+
+.peer-debt-card-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.peer-debt-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.peer-debt-card-sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.peer-debt-pill {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.peer-debt-pill--pending {
+  background: var(--color-bg-main);
+  color: var(--color-text-muted);
+}
+
+.peer-debt-pill--accepted {
+  background: var(--color-income-light);
+  color: var(--color-income);
+}
+
+.peer-debt-pill--dispute {
+  background: rgba(245, 158, 11, 0.14);
+  color: #b45309;
+}
+
+.peer-debt-caption {
+  margin: 18px 2px 0;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-text-muted);
+}

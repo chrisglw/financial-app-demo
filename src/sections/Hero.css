@@ -1,0 +1,117 @@
+.section-hero {
+  padding-top: 96px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.hero-copy {
+  flex: 1 1 420px;
+  max-width: 560px;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-hover);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-headline {
+  margin-top: 20px;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--color-text-main);
+}
+
+.hero-subheadline {
+  margin-top: 20px;
+  max-width: 480px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.hero-waitlist-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.hero-waitlist-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: var(--height-input);
+  padding: 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-surface);
+  color: var(--color-text-main);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.hero-waitlist-input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.hero-waitlist-submit {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: var(--height-input);
+  padding: 0 20px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.hero-waitlist-submit:hover {
+  background: var(--color-primary-hover);
+}
+
+.hero-mockup {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-copy {
+    max-width: 480px;
+  }
+
+  .hero-subheadline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-waitlist-form {
+    flex-direction: column;
+  }
+}

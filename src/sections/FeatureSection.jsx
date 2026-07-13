@@ -1,13 +1,14 @@
 import PhoneFrame from '../components/PhoneFrame'
 import './FeatureSection.css'
 
-function FeatureSection({ title, copy, mockup }) {
+function FeatureSection({ eyebrow, title, copy, mockup, reverse = false }) {
   return (
-    <section className="section section-feature">
+    <section className={`section section-feature${reverse ? ' section-feature--reverse' : ''}`}>
       <div className="section-feature-inner">
         <div className="section-feature-copy">
-          <h2>{title || 'Feature Section'}</h2>
-          <p>{copy || 'TODO: text copy + phone-framed mockup, alternating layout'}</p>
+          {eyebrow && <span className="section-feature-eyebrow">{eyebrow}</span>}
+          <h2 className="section-feature-title">{title}</h2>
+          <p className="section-feature-text">{copy}</p>
         </div>
         {mockup && (
           <div className="section-feature-mockup">
